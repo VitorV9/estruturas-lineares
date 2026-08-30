@@ -5,6 +5,7 @@ require_relative 'estruturas/fila_estatica'
 require_relative 'estruturas/fila_dinamica'
 require_relative 'estruturas/fila_circular_estatica'
 require_relative 'estruturas/fila_circular_dinamica'
+require_relative 'estruturas/lde_estatica'
 
 def menu_operacoes(estrutura, nome_estrutura)
   loop do
@@ -87,6 +88,9 @@ loop do
   when 6
     estrutura_ativa = FilaCircularDinamica.new
     nome = "Fila Circular Dinâmica"
+  when 7
+    estrutura_ativa = LdeEstatico.new(5)
+    nome = "LDE Estática"
   else
     puts "Estrutura ainda não implementada. Digite 2 para testar a Pilha Dinâmica."
     next
