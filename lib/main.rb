@@ -65,6 +65,9 @@ loop do
   nome = ""
 
   case escolha
+  when 1
+    estrutura_ativa = PilhaEstatica.new(5)
+    nome = "Pilha Estática"
   when 2
     estrutura_ativa = PilhaDinamica.new
     nome = "Pilha Dinâmica"
