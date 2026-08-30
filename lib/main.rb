@@ -1,5 +1,6 @@
 require_relative 'no'
 require_relative 'estruturas/pilha_dinamica'
+require_relative 'estruturas/pilha_estatica'
 
 def menu_operacoes(estrutura, nome_estrutura)
   loop do
