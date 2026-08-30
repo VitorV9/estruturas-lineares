@@ -1,14 +1,13 @@
 Markdown
-# 🚀 Nome do Projeto
+# 🚀 Estruturas Lineares
 
-Uma frase curta explicando o que este projeto faz (ex: "Script em Ruby para ler e processar dados de um arquivo").
+
 
 ---
 
 ## 🛠️ Tecnologias
 
 * **Linguagem:** Ruby
-* **Dependências:** Bundler e a biblioteca `dotenv`
 
 ---
 
@@ -18,5 +17,5 @@ Siga os comandos abaixo no seu terminal para testar o projeto:
 
 ### 1. Clonar o projeto e entrar na pasta
 ```bash
-git clone [https://github.com/VitorV9/ruby-template.git]
+git clone [https://github.com/VitorV9/estruturas-lineares.git]
 cd ruby-template
