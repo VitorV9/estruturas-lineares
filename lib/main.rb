@@ -1,3 +1,5 @@
+#Vitor da Silva Bonato, Tiago Andrei de Almeida Mendonça e Pedro Schmitt Dalepiane
+
 require_relative 'no'
 require_relative 'estruturas/pilha_dinamica'
 require_relative 'estruturas/pilha_estatica'
