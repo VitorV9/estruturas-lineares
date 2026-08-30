@@ -1,6 +1,7 @@
 require_relative 'no'
 require_relative 'estruturas/pilha_dinamica'
 require_relative 'estruturas/pilha_estatica'
+require_relative 'estruturas/fila_estatica'
 require_relative 'estruturas/fila_dinamica'
 
 def menu_operacoes(estrutura, nome_estrutura)
@@ -72,6 +73,9 @@ loop do
   when 2
     estrutura_ativa = PilhaDinamica.new
     nome = "Pilha Dinâmica"
+  when 3
+    estrutura_ativa = FilaEstatica.new(5)
+    nome = "Fila Linear Estática"
   when 4
     estrutura_ativa = FilaDinamica.new
     nome = "Fila Linear Dinâmica"
