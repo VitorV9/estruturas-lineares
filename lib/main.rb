@@ -43,3 +43,34 @@ def menu_operacoes(estrutura, nome_estrutura)
     end
   end
 end
+
+loop do
+  puts "\nMENU PRINCIPAL (ESTRUTURAS LINEARES)"
+  puts "1. Pilha Estática (Vetor)"
+  puts "2. Pilha Dinâmica (Heap)"
+  puts "3. Fila Linear Estática (Vetor)"
+  puts "4. Fila Linear Dinâmica (Heap)"
+  puts "5. Fila Circular Estática (Vetor Circular)"
+  puts "6. Fila Circular Dinâmica (Cursor/Anel)"
+  puts "7. LDE Estática (Matricial com PND)"
+  puts "8. LDE Dinâmica (Heap)"
+  puts "9. Sair do Programa"
+  print "Escolha a estrutura: "
+
+  escolha = gets.chomp.to_i
+  break if escolha == 9
+
+  estrutura_ativa = nil
+  nome = ""
+
+  case escolha
+  when 2
+    estrutura_ativa = PilhaDinamica.new
+    nome = "Pilha Dinâmica"
+  else
+    puts "Estrutura ainda não implementada. Digite 2 para testar a Pilha Dinâmica."
+    next
+  end
+
+  menu_operacoes(estrutura_ativa, nome)
+end
